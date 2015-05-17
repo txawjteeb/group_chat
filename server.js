@@ -30,7 +30,7 @@ io.sockets.on('connection', function (socket) {
     	// console.log(data.name);
     	history.push(data);
 		io.emit("new_text" , {text : data.text , name: data.name});
-		console.log(history)
+		console.log(history);
 	});
 	socket.on('disconnect', function () {
 	    console.log('disconnect!');
